@@ -1,3 +1,4 @@
+// miniprogram/pages/orders/detail/detail.js (updated: use order._id vs doc id consistency)
 Page({
   data:{ order: {} },
   onLoad(e){ this.load(e.id) },

@@ -1,4 +1,4 @@
-// cloudfunctions/initData/index.js
+// cloudfunctions/initData/index.js (updated to create admin placeholder note)
 const cloud = require('wx-server-sdk')
 cloud.init()
 const db = cloud.database()
@@ -35,7 +35,8 @@ exports.main = async () => {
     for (const p of products) {
       await db.collection('products').add({ data: p })
     }
-    return { success: true }
+    // 提示：管理员账号需在云数据库 admins 集合中添加管理员用户（在管理端中插入一条文档即可）
+    return { success: true, note: 'Products inserted. To create admin, add a document to `admins` collection via Cloud Database console.' }
   } catch (err) {
     return { success: false, err: err.message }
   }
