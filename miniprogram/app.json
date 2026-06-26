@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/product/list/list",
+    "pages/product/detail/detail",
+    "pages/cart/index/index",
+    "pages/checkout/index/index",
+    "pages/orders/list/list",
+    "pages/orders/detail/detail"
+  ],
+  "window": { "navigationBarTitleText": "微信商城示例" }
+}

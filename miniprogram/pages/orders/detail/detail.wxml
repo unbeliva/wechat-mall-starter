@@ -1,0 +1,13 @@
+<view>
+  <view>订单ID：{{order._id}}</view>
+  <view>状态：{{order.status}}</view>
+  <view>门店：{{order.pickupStore.name}}</view>
+  <block wx:for="{{order.items}}" wx:key="index">
+    <view>
+      <text>{{item.title}} x{{item.qty}}</text>
+    </view>
+  </block>
+  <view style="margin-top:12px">
+    <button bindtap="markReady">门店确认自提准备完成</button>
+  </view>
+</view>

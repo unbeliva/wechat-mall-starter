@@ -1,0 +1,8 @@
+<view>
+  <block wx:for="{{orders}}" wx:key="_id">
+    <view bindtap="open" data-id="{{item._id}}">
+      <text>订单：{{item._id}}</text>
+      <text>状态：{{item.status}}</text>
+    </view>
+  </block>
+</view>

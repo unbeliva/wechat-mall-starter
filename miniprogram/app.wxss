@@ -1,0 +1,8 @@
+/* global styles */
+page { padding: 12px }
+.item { display:flex; margin-bottom:12px }
+.item image { width:120px; height:120px; border-radius:6px }
+.info { padding-left:12px; flex:1 }
+.title { font-size:16px; color:#333 }
+.price { color:#e64340; margin-top:8px }
+.button { margin-top:10px }

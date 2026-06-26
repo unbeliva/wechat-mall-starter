@@ -1,0 +1,11 @@
+<view class="list">
+  <block wx:for="{{products}}" wx:key="_id">
+    <view class="item" bindtap="goDetail" data-id="{{item._id}}">
+      <image src="{{item.images[0]}}" mode="aspectFill"></image>
+      <view class="info">
+        <text class="title">{{item.title}}</text>
+        <text class="price">¥{{item.price/100}}</text>
+      </view>
+    </view>
+  </block>
+</view>

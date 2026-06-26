@@ -1,0 +1,13 @@
+<view>
+  <block wx:for="{{cartItems}}" wx:key="index">
+    <view class="item">
+      <text>{{item.product.title}}</text>
+      <text>规格: {{item.sku.attrs.join(' / ')}}</text>
+      <text>数量: {{item.qty}}</text>
+      <text>小计: ¥{{(item.sku.price*item.qty)/100}}</text>
+    </view>
+  </block>
+  <view style="margin-top:12px">
+    <button bindtap="toCheckout">去下单（自提）</button>
+  </view>
+</view>
